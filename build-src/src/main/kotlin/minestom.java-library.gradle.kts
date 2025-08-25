@@ -48,7 +48,7 @@ tasks.withType<Javadoc> {
         addBooleanOption("html5", true)
         addStringOption("-release", javaVersion)
         // Links to external javadocs
-        links("https://docs.oracle.com/en/java/javase/${javaVersion}/docs/api/")
+        links("https://docs.oracle.com/en/java/javase/24/docs/api/") //TODO (jdk25) undo 24
         links("https://javadoc.io/doc/net.kyori/adventure-api/${libs.versions.adventure.get()}/")
     }
 }
